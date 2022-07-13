@@ -4,19 +4,18 @@ body {
   margin: 0;
   padding: 0;
 }
-
-.input-erea {
+.area {
+  max-width: 400px;
+  margin: 8px 5%;
+  padding: 1rem;
+}
+.input-area {
   background-color: #c1ffff;
-  width: 90%;
-  margin: auto;
+  margin-top: 8px;
 }
 .incomplate-area {
   background-color: #c6ffe2;
-  width: 90%;
-  margin: auto;
 }
 .conplete-area {
   background-color: #ffffe0;
-  width: 90%;
-  margin: auto;
 }
