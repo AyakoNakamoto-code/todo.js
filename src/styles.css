@@ -6,14 +6,15 @@ body {
 }
 
 input {
-  border-radius: 4px;
+  border-radius: 8px;
   border: none;
-  padding: 6px 16px;
+  padding: 6px 8px;
   outline: none;
 }
 
 button {
-  border-radius: 4px;
+  margin: 4px;
+  border-radius: 16px;
   border: none;
   padding: 4px 16px;
 }
@@ -29,6 +30,14 @@ button:hover {
   padding: 1rem;
   border-radius: 4px;
 }
+.area-title {
+  margin-top: 0;
+  text-align: center;
+  font-weight: bold;
+  color: #666;
+  font-size: 18px;
+}
+
 .input-area {
   background-color: #c1ffff;
   margin-top: 8px;
@@ -38,4 +47,10 @@ button:hover {
 }
 .conplete-area {
   background-color: #ffffe0;
+}
+
+.area-inner {
+  margin: 8px;
+  display: flex;
+  align-items: center;
 }
