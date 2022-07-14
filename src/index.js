@@ -16,11 +16,16 @@ const onClickAdd = () => {
   // button(完了)タグ生成
   const complateButton = document.createElement("button");
   complateButton.innerText = "完了";
+  complateButton.addEventListener("click", () => {
+    alert("完了");
+  });
 
   // button(完了)タグ生成
   const deleteButton = document.createElement("button");
   deleteButton.innerText = "削除";
-  console.log(deleteButton);
+  deleteButton.addEventListener("click", () => {
+    alert("削除");
+  });
 
   // liの子要素に各要素を設定
   li.appendChild(pTxt);
