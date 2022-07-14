@@ -13,8 +13,19 @@ const onClickAdd = () => {
   // pTxt.innerText = inputText;
   pTxt.textContent = inputText;
 
-  // liの子要素に
+  // button(完了)タグ生成
+  const complateButton = document.createElement("button");
+  complateButton.innerText = "完了";
+
+  // button(完了)タグ生成
+  const deleteButton = document.createElement("button");
+  deleteButton.innerText = "削除";
+  console.log(deleteButton);
+
+  // liの子要素に各要素を設定
   li.appendChild(pTxt);
+  li.appendChild(complateButton);
+  li.appendChild(deleteButton);
 
   // 未完了リストに追加
   document.getElementById("incomplate-list").appendChild(li);
