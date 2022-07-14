@@ -13,7 +13,9 @@ const onClickAdd = () => {
   // pTxt.innerText = inputText;
   pTxt.textContent = inputText;
 
-  console.log(pTxt);
+  // liの子要素に
+  li.appendChild(pTxt);
+  console.log(li);
 };
 
 document
