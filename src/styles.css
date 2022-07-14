@@ -51,7 +51,11 @@ button:hover {
 
 /* ulタグ */
 ul li {
-  margin: 8px;
+  /* margin: 8px; */
   display: flex;
   align-items: center;
+}
+/* pタグ　*/
+p {
+  margin: 0;
 }
