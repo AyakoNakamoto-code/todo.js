@@ -8,12 +8,10 @@ const onClickAdd = () => {
   // li生成
   const li = document.createElement("li");
   li.className = "list-row";
-  console.log(li);
 
   // liの中のpタグ生成
-  // const listText = document.createElement("p");
-  // listText.className = "p";
-  // console.log(listText);
+  const p = document.createElement("p");
+  console.log(p);
 };
 
 document
