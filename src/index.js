@@ -23,10 +23,10 @@ const onClickAdd = () => {
   // button(完了)タグ生成
   const deleteButton = document.createElement("button");
   deleteButton.innerText = "削除";
+  // 作成された削除ボタンを未完了リストから削除
   deleteButton.addEventListener("click", () => {
-    // 作成された削除ボタンをliごと削除
     const deleteTarget = deleteButton.parentNode;
-    console.log(deleteTarget);
+    document.getElementById("incomplate-list").removeChild(deleteTarget);
   });
 
   // liの子要素に各要素を設定
