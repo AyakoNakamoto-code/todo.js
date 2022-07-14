@@ -15,7 +15,9 @@ const onClickAdd = () => {
 
   // liの子要素に
   li.appendChild(pTxt);
-  console.log(li);
+
+  // 未完了リストに追加
+  document.getElementById("incomplate-list").appendChild(li);
 };
 
 document
