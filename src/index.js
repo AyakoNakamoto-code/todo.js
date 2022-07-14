@@ -10,6 +10,7 @@ const onClickAdd = () => {
 
   // liの中のpタグ生成
   const pTxt = document.createElement("p");
+  // pTxt.innerText = inputText;
   pTxt.textContent = inputText;
 
   console.log(pTxt);
