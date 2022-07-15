@@ -33,11 +33,13 @@ const onClickAdd = () => {
     const pText = document.createElement("p");
     pText.innerText = text;
 
-    // buttonタグ生成
+    // button(戻す)タグ生成
     const backButton = document.createElement;
     backButton.innerText = "戻す";
 
-    //
+    //liタグの子要素に各要素を追加
+    addTarget.appendChild("p");
+    addTarget.appendChild("backButton");
   });
 
   // button(完了)タグ生成
