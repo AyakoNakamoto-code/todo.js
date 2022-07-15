@@ -32,7 +32,12 @@ const onClickAdd = () => {
     // liタグ生成
     const pText = document.createElement("p");
     pText.innerText = text;
-    console.log("pText");
+
+    // buttonタグ生成
+    const backButton = document.createElement;
+    backButton.innerText = "戻す";
+
+    //
   });
 
   // button(完了)タグ生成
