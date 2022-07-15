@@ -18,17 +18,15 @@ const onClickAdd = () => {
   complateButton.innerText = "完了";
   complateButton.addEventListener("click", () => {
     // 押された完了ボタンの親タグ(li)を選択（parentNode）し、未完了リストから削除
-    const deleteTarget = complateButton.parentNode;
-    document.getElementById("incomplate-list").removeChild(deleteTarget);
+    deleteFromComplateList(complateButton.parentNode);
   });
 
   // button(完了)タグ生成
   const deleteButton = document.createElement("button");
   deleteButton.innerText = "削除";
-  // 作成された削除ボタンを未完了リストから削除
+  // 作成された削除ボタンを未完了リストから削除 → 関数化し呼び出し
   deleteButton.addEventListener("click", () => {
-    const deleteTarget = deleteButton.parentNode;
-    document.getElementById("incomplate-list").removeChild(deleteTarget);
+    deleteFromComplateList(deleteButton.parentNode);
   });
 
   // liの子要素に各要素を設定
@@ -38,6 +36,11 @@ const onClickAdd = () => {
 
   // 未完了リストに追加
   document.getElementById("incomplate-list").appendChild(li);
+};
+
+// 未完了リストから指定の要素を削除する関数作成
+const deleteFromComplateList = (target) => {
+  document.getElementById("incomplate-list").removeChild(target);
 };
 
 document
