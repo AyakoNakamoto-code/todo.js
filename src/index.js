@@ -9,9 +9,9 @@ const onClickAdd = () => {
   li.className = "list-row";
 
   // liの中のpタグ生成
-  const pTxt = document.createElement("p");
-  // pTxt.innerText = inputText;
-  pTxt.textContent = inputText;
+  const pText = document.createElement("p");
+  // pText.innerText = inputText;
+  pText.textContent = inputText;
 
   // button(完了)タグ生成
   const complateButton = document.createElement("button");
@@ -28,7 +28,11 @@ const onClickAdd = () => {
 
     // li以下を初期化
     addTarget.textContent = null;
-    console.log(addTarget);
+
+    // liタグ生成
+    const pText = document.createElement("p");
+    pText.innerText = text;
+    console.log("pText");
   });
 
   // button(完了)タグ生成
@@ -40,7 +44,7 @@ const onClickAdd = () => {
   });
 
   // liの子要素に各要素を設定
-  li.appendChild(pTxt);
+  li.appendChild(pText);
   li.appendChild(complateButton);
   li.appendChild(deleteButton);
 
