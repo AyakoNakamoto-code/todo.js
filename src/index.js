@@ -17,7 +17,12 @@ const onClickAdd = () => {
   const complateButton = document.createElement("button");
   complateButton.innerText = "完了";
   complateButton.addEventListener("click", () => {
-    // 押された完了ボタンの親タグ(li)を選択（parentNode）し、未完了リストから削除
+    // 完了リストに追加する要素
+    const addTarget = complateButton.parentNode;
+    const text = addTarget.firstChild.innerText;
+    console.log(text);
+
+    // 完了ボタンの親タグ(li)を選択（parentNode）し、未完了リストから削除
     deleteFromComplateList(complateButton.parentNode);
   });
 
