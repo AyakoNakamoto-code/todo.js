@@ -34,14 +34,15 @@ const onClickAdd = () => {
     pText.innerText = text;
 
     // button(戻す)タグ生成
-    const backButton = document.createElement;
+    const backButton = document.createElement("button");
     backButton.innerText = "戻す";
-    console.log(backButton);
 
     // liタグの子要素に各要素を追加
     addTarget.appendChild(pText);
     addTarget.appendChild(backButton);
-    console.log(addTarget);
+
+    // 完了リストに追加
+    document.getElementById("conplete-list").appendChild("li");
   });
 
   // button(完了)タグ生成
