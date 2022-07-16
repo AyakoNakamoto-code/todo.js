@@ -40,6 +40,10 @@ const onClickAdd = () => {
       // 押された戻すボタンの親タグ（li）を完了リストから削除
       const deleteTarget = backButton.parentNode;
       document.getElementById("complete-list").removeChild(deleteTarget);
+
+      // テキスト取得
+      const text = backButton.parentNode.firstChild.innerText;
+      console.log(text);
     });
 
     // liタグの子要素に各要素を追加
