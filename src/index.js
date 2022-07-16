@@ -4,6 +4,15 @@ const onClickAdd = () => {
   // テキストボックスの値を取得し、初期化する
   const inputText = document.getElementById("inputText").value;
   document.getElementById("inputText").value = "";
+};
+
+// 未完了リストから指定の要素を削除する関数作成
+const deleteFromComplateList = (target) => {
+  document.getElementById("incomplate-list").removeChild(target);
+};
+
+// 未完了リストに追加する関数
+const createIncomplateList = (text) => {
   // li生成
   const li = document.createElement("li");
   li.className = "list-row";
@@ -11,7 +20,7 @@ const onClickAdd = () => {
   // liの中のpタグ生成
   const pText = document.createElement("p");
   // pText.innerText = inputText;
-  pText.textContent = inputText;
+  pText.textContent = text;
 
   // button(完了)タグ生成
   const complateButton = document.createElement("button");
@@ -69,11 +78,6 @@ const onClickAdd = () => {
 
   // 未完了リストに追加
   document.getElementById("incomplate-list").appendChild(li);
-};
-
-// 未完了リストから指定の要素を削除する関数作成
-const deleteFromComplateList = (target) => {
-  document.getElementById("incomplate-list").removeChild(target);
 };
 
 document
