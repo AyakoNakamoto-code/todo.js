@@ -2,30 +2,24 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <link rel="src/styles.css" />
     <title>TODO js</title>
   </head>
 
   <body>
-    <div class="input-erea">
-      <p>作成したいリストを入力して下さい</p>
-      <input type="text" 　placeholder="TODOを入力..." />
-      <button>追加</button>
+    <div class="input-area area">
+      <input type="text" id="inputText" placeholder="TODOを入力" />
+      <button id="add-button">追加</button>
     </div>
-    <div class="imcomplate-area">
-      <p>未完了のTODO</p>
-      <div class="">
-        <p>TODOです</p>
-        <button>追加</button>
-        <button>削除</button>
+    
+    <div class="incomplate-area area">
+      <p class="area-title">未完了のTODO</p>
+      <ul class="area-inner" id="incomplate-list"></ul>
       </div>
     </div>
-    <div class="conplete-area">
-      <p>完了したTODO</p>
-      <div class="">
-        <p>TODOでした</p>
-        <button>戻す</button>
-      </div>
+
+    <div class="complete-area area">
+      <p class="area-title">完了したTODO</p>
+      <ul class="area-inner" id="complete-list"></ul>
     </div>
 
     <script src="src/index.js"></script>

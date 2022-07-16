@@ -1,12 +1,63 @@
 body {
   font-family: sans-serif;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
-.input-erea {
+
+input {
+  border-radius: 8px;
+  border: none;
+  padding: 6px 8px;
+  outline: none;
+}
+
+button {
+  margin: 4px;
+  border-radius: 16px;
+  border: none;
+  padding: 4px 16px;
+}
+button:hover {
+  background-color: #ff7fff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.area {
+  max-width: 400px;
+  margin: 8px 5% 4px;
+  padding: 1rem;
+  border-radius: 4px;
+}
+.area-title {
+  margin-top: 0;
+  text-align: center;
+  font-weight: bold;
+  color: #666;
+  font-size: 18px;
+}
+
+.input-area {
+  margin-top: 8px;
   background-color: #c1ffff;
 }
-.imcomplate-area {
+.incomplate-area {
+  min-height: 180px;
   background-color: #c6ffe2;
 }
-.conplete-area {
+.complete-area {
+  min-height: 180px;
   background-color: #ffffe0;
+}
+
+/* ulタグ */
+ul li {
+  /* margin: 8px; */
+  display: flex;
+  align-items: center;
+}
+/* pタグ　*/
+p {
+  margin: 0;
 }
