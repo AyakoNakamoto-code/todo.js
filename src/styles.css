@@ -39,13 +39,15 @@ button:hover {
 }
 
 .input-area {
-  background-color: #c1ffff;
   margin-top: 8px;
+  background-color: #c1ffff;
 }
 .incomplate-area {
+  min-height: 180px;
   background-color: #c6ffe2;
 }
 .complete-area {
+  min-height: 180px;
   background-color: #ffffe0;
 }
 
