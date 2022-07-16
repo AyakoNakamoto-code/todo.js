@@ -4,6 +4,7 @@ const onClickAdd = () => {
   // テキストボックスの値を取得し、初期化する
   const inputText = document.getElementById("inputText").value;
   document.getElementById("inputText").value = "";
+  createIncomplateList(inputText);
 };
 
 // 未完了リストから指定の要素を削除する関数作成
