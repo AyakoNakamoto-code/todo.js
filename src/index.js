@@ -4,6 +4,7 @@ const onClickAdd = () => {
   // テキストボックスの値を取得し、初期化する
   const inputText = document.getElementById("inputText").value;
   document.getElementById("inputText").value = "";
+
   createIncomplateList(inputText);
 };
 
@@ -53,7 +54,7 @@ const createIncomplateList = (text) => {
 
       // テキスト取得
       const text = backButton.parentNode.firstChild.innerText;
-      console.log(text);
+      createIncomplateList(text);
     });
 
     // liタグの子要素に各要素を追加
